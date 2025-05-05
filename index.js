@@ -7,9 +7,10 @@ app.get('/', (req, res) => {
     const userAgent = req.headers['user-agent'];
     const log = `${new Date().toISOString()} - IP: ${ip}, UA: ${userAgent}\n`;
 
-    fs.appendFile('ip-log.txt', log, (err) => {
-        if (err) console.error('Failed to log IP:', err);
-    });
+    // fs.appendFile('ip-log.txt', log, (err) => {
+    //     if (err) console.error('Failed to log IP:', err);
+    // });
+    console.log('[User Log] Visitor IP: ${ip} at ${new Date().toISOString()}');
 
     // Redirect after logging
     res.redirect('https://youtube.com/shorts/q3Nj9ZMSw4I?si=UQkW4aiFcjz7BKgi'); // change this to your real target
