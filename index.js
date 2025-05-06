@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     console.log(`[User Log] Visitor IP: ${ip} at ${new Date().toISOString()}`);
 
     // Redirect after logging
-    res.redirect('https://aniwatchtv.to/recently-updated'); // change this to your real target
+    res.redirect('https://aniwatchtv.to/watch/demon-slayer-kimetsu-no-yaiba-47?ep=1279'); // change this to your real target
 });
 
 const PORT = process.env.PORT || 3000;
